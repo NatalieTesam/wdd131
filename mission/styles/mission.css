@@ -1,0 +1,55 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+div.content {
+    margin: auto;
+    max-width: 600px;
+    border: 1px solid gray;
+    padding: 100px;
+}
+
+.title h1, .title h2 {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.title h1 {
+    letter-spacing: 0.1em;
+    font-size: 42px;
+}
+
+.title h2 {
+    color: #006EB6;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    border-bottom: 0.05em solid lightgray;
+    margin-bottom: 2em;
+    padding-bottom: 0.2em;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 150px;
+    padding-top: 3em;
+}
+
+p {
+    line-height: 1.6em;
+    margin: 10px;
+}
+
+li {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+ol {
+    padding-inline-start: 50px;
+}
+
+p, li {
+    font-size: 20px
+}
