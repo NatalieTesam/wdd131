@@ -1,18 +1,28 @@
-fetch("patterns.json")
-.then(function(response){
+fetch("./scripts/crochet-patterns.json")
+.then(function(response) {
     return response.json();
 })
-.then(function(products){
+.then(function(data) {
+    console.log(data);
     let placeholder = document.querySelector("data-output");
-    let out = "";
-    for(let product of products){
-        out += `
-            <div class="popular-pattern">
-                <img src="${product.image}" alt="${product.name}">
-                <h3>${product.name}</h3>
+    for(let item of data){
+        let out = 
+        `
+            <div>
+                <img src="${item.image}" alt="${item.name}">
+                <h3>${item.name}</h3>
             </div>
         `;
+        document.body.appendChild(out.trim());
     }
 
-    placeholder.innerHTML = out;
+    
 })
+
+function elementFromHtml(html){
+    const template = document.createElement("template");
+
+    template.innerHtml = html.trim();
+    return template.content.firstElementChild;
+
+}
