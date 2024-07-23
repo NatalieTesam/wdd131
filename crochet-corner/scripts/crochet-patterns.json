@@ -3,7 +3,7 @@
     "id": 0,
     "name": "Chicken",
     "difficulty": "beginner",
-    "image": "images/chicken.jpg",
+    "image": "images/chickens.jpg",
     "pattern": {
       "Body": [
         "1. 6 Sc in MR (6)",
@@ -36,7 +36,7 @@
     "id": 1,
     "name": "Pig",
     "difficulty": "intermediate",
-    "image": "images/pig.jpg",
+    "image": "images/placeholder.jpg",
     "pattern": {
       "Body": [
         "1. 6 Sc in MR (6)",
@@ -85,7 +85,7 @@
     "id": 2,
     "name": "Bald Eagle",
     "difficulty": "hard",
-    "image": "images/bald-eagle.jpg",
+    "image": "images/placeholder.jpg",
     "pattern": {
       "Head": [
         "Start with white.",
