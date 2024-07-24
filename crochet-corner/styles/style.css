@@ -14,14 +14,10 @@
   --paragraph-font: "Roboto", sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: var(
-    --primary-color
-  ); /* headlines on a white background */
-  --headline-color-on-color: white; /* headlines on a colored background */
-  --paragraph-color-on-white: var(
-    --primary-color
-  ); /* paragraph text on a white background */
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --headline-color-on-white: var(--primary-color);
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: var(--primary-color);
+  --paragraph-color-on-color: white;
   --paragraph-background-color: var(--primary-color);
   --nav-link-color: white;
   --nav-background-color: var(--accent1-color);
@@ -29,17 +25,31 @@
   --nav-hover-background-color: var(--secondary-color);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
+  background-color: var(--primary-color);
+  max-width: 940px;
+  margin: auto auto;
+  padding: 1em, 2em;
   font-size: 18px;
+}
+
+.content {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
+
 h1,
 h2,
 h3,
@@ -57,11 +67,11 @@ hr {
   margin: 35px 0;
   background: var(--accent1-color);
 }
+
 header {
-  padding: 1em;
   text-align: center;
   color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
+  background-color: var(--accent2-color);
 }
 header > h1,
 header > h2 {
@@ -75,14 +85,13 @@ p {
 }
 
 nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
-}
-nav {
   list-style-type: none;
-  display: flex;
 }
 nav a {
   padding: 1em;
@@ -99,23 +108,15 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
-.top {
-  grid-area: top;
-  border-left: 1px solid;
+main img {
+  box-shadow: 0 0 7px #808080;
 }
-
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
+main {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  margin: 3em;
 }
-
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
-}
-
 footer {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -123,16 +124,22 @@ footer {
   align-items: center;
   padding: 0.8%;
 }
+
 footer h3 {
-  color: white;
+  color: var(--headline-color-on-color);
 }
+
 footer p {
-  color: white;
+  color: var(--paragraph-color-on-color);
   padding: 0px 10px;
 }
+
 footer .social {
   margin-left: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
+
 footer .social img {
   margin-left: 5px;
 }
