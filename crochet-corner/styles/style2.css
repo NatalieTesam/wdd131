@@ -69,11 +69,12 @@ header {
 
 nav {
   background-color: var(--nav-background-color);
-  padding: 0 auto;
+  padding: 0 10%;
   display: grid;
   grid-template-columns: auto auto auto auto;
   font-size: 1.3em;
   text-align: center;
+  box-shadow: 0 0 7px #808080;
 }
 
 nav a {
