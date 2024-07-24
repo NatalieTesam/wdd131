@@ -35,7 +35,6 @@ body {
 }
 
 .content {
-  
 }
 
 h1,
@@ -47,7 +46,7 @@ h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
   padding: 18px;
-} 
+}
 
 h2 {
   font-size: 30px;
@@ -68,7 +67,7 @@ header {
   height: 150px;
   width: auto;
   margin: 0 auto;
-  padding: 10px; 
+  padding: 10px;
 }
 
 nav {
@@ -84,22 +83,22 @@ nav {
 nav a {
   text-decoration: none;
   color: var(--nav-link-color);
-  padding: 1em; 
+  padding: 1em;
   min-width: 100px;
   max-width: 200px;
 }
 
-nav a:hover { 
+nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
 
 main {
- max-width: 1000px;
- margin: 0 auto;
- padding: 0 2em 2em 2em;
- display: grid;
- grid-template: auto auto auto / auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2em 2em 2em;
+  display: grid;
+  grid-template: auto auto auto / auto;
 }
 
 #welcome-section {
@@ -108,18 +107,18 @@ main {
   grid-gap: 1em;
   box-shadow: 0 0 7px #808080;
   padding: 1em 2em 2em 2em;
-  margin: 1em
+  margin: 1em;
 }
 
 .banner {
- object-fit: cover;
- object-position: center;
- align-content: center;
- justify-content: center;
- width: 100%;
- height: 300px;
- grid-area: 1 / 1 / 2 / 3;
- margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  grid-area: 1 / 1 / 2 / 3;
+  margin: 0 auto;
 }
 
 .welcome-image {
@@ -134,12 +133,12 @@ main {
   grid-area: 2 / 2 / 3 / 3;
   align-content: end;
   border-bottom: 2px solid var(--primary-color);
-  max-width: 90%
+  max-width: 90%;
 }
 
 #welcome-section p {
   grid-area: 3 / 2 / 4 / 3;
-  max-width: 90%
+  max-width: 90%;
 }
 
 #popular-patterns-section {
@@ -157,7 +156,7 @@ main {
 
 #home-page-pattern-output {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   margin: 0.2em;
   padding: 0.2em;
@@ -217,7 +216,7 @@ footer {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   padding: 1em 1em;
-  text-align: center
+  text-align: center;
 }
 
 footer h3 {
@@ -225,8 +224,9 @@ footer h3 {
   color: var(--headline-color-on-color);
 }
 
-footer p, footer p a {
-  color: var(--headline-color-on-color)
+footer p,
+footer p a {
+  color: var(--headline-color-on-color);
 }
 
 footer .social {
@@ -237,5 +237,3 @@ footer .social {
 footer .social img {
   margin-left: 5px;
 }
-
-
