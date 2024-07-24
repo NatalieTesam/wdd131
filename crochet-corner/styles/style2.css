@@ -214,4 +214,28 @@ main {
 
 footer {
   background-color: var(--accent1-color);
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 1em 1em;
+  text-align: center
 }
+
+footer h3 {
+  font-family: var(--paragraph-font);
+  color: var(--headline-color-on-color);
+}
+
+footer p, footer p a {
+  color: var(--headline-color-on-color)
+}
+
+footer .social {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+footer .social img {
+  margin-left: 5px;
+}
+
+
