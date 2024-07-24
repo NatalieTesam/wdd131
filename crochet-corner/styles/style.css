@@ -273,6 +273,8 @@ footer .social img {
 
 .pattern-card {
   padding: 1em;
+  display: grid;
+  grid-template: auto auto;
 }
 
 .pattern-card img {
@@ -288,7 +290,7 @@ footer .social img {
 .pattern-card h3 {
   margin: 0 1em;
   padding: 0.2 1em;
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
   text-align: center;
 }
 
