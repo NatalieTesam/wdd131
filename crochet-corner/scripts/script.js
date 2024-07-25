@@ -1,28 +1,19 @@
-fetch("./scripts/crochet-patterns.json")
-.then(function(response) {
-    return response.json();
-})
-.then(function(data) {
-    console.log(data);
-    let placeholder = document.querySelector("data-output");
-    for(let item of data){
-        let out = 
-        `
-            <div>
-                <img src="${item.image}" alt="${item.name}">
-                <h3>${item.name}</h3>
-            </div>
-        `;
-        document.body.appendChild(out.trim());
-    }
+const patternsSection = document.getElementById("patterns-section-output");
+var patterns;
 
-    
-})
+const patternsJson = fetch("./scripts/crochet-patterns.json")
+  .then((response) => response.json())
+  .then((data) => {
+    obj = data;
+  })
+  .then(() => {
+    console.log(obj);
+  });
 
-function elementFromHtml(html){
-    const template = document.createElement("template");
-
-    template.innerHtml = html.trim();
-    return template.content.firstElementChild;
-
+function populatePatterns(patterns) {
+  for (pattern in patterns) {
+    console.log(pattern);
+  }
 }
+
+populatePatterns(patterns);
